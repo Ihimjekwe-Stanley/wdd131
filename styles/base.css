@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color1: rgb(55, 163, 206);
+    --primary-color2: rgb(167, 140, 24);
+    --secondary-color1: rgb(19, 60, 59);
+    --secondary-color2: rgb(5, 28, 37);
+    --text-color1: rgb(243, 248, 250);
+    --text-color2: rgb(156, 153, 153);
+    --font-size1: 2rem;
+    --font-size2: 3rem;
+    --font-size3: 1.5rem;
+}
+
+body {
+    display: grid;
+    justify-items: center;
+    font-size: var(--font-size3);
+    background-color: var(--text-color1);
+    font-family: "Fira Code", monospace;
+}
+
+header {
+    display: grid;
+    width: 100vw;
+    text-align: center;
+    color: var(--text-color1);
+    background-color: var(--secondary-color1);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: var(--secondary-color2);
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--text-color2);
+    font-size: var(--font-size3);
+}
+
+header nav a:hover{
+    color: var(--primary-color2);
+}
+
+#course-title {
+    font-size: var(--font-size1);
+    padding: 20px 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--font-size2);
+    max-width: 80%;
+    width: 90vw;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: var(--font-size2);
+}
+
+.personal {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.personal, .country, .card ul {
+    padding: var(--font-size2);
+}
+
+.personal img {
+    width: 200px;
+    aspect-ratio: 3/4;
+    margin: 0 10px;
+    border-radius: 10px;
+} 
+
+.card {
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card ul a {
+    font-size: var(--font-size3);
+    text-decoration: none;
+    line-height: 1.6;
+    color: var(--secondary-color2);
+}
+
+.card ul a:hover {
+    color: var(--primary-color2);
+}
+
+main h2 {
+    text-align: center;
+    background-color: var(--secondary-color1);
+    padding: 10px 0;
+    font-size: var(--font-size1);
+    color: var(--text-color1);
+}
+
+.country {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+}
+.country img {
+    width: 300px;
+    aspect-ratio: 4/3;
+    margin: 0 10px;
+}
+
+.country h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 15px 0;
+    border-bottom: 1px solid black;
+    width: 60%;
+    justify-self: center;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    margin: 10px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+footer {
+    display: grid;
+    width: 100vw;
+    text-align: center;
+    color: var(--text-color1);
+    font-size: var(--font-size1);
+    padding: 20px 0;
+    background-color: var(--secondary-color1);
+}
