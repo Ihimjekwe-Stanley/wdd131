@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #030a14;
+    --secondary-color: #e2cccc;
+    --text-dark: #333333;
+    --background-light: #f4f4f9;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+header, main, footer {
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    flex-wrap: wrap;
+}
+
+#header-title {
+    font-size: 1.5rem;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+nav {
+    flex: 1 1 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+nav ul li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul li:first-child {
+    border-top: none;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+} */
+
+nav ul.open {
+    display: block;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+    background-color: var(--background-light);
+    padding: 8px;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "X";
+}
