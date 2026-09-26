@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #030a14;
-    --secondary-color: #e2cccc;
-    --text-dark: #333333;
+    --primary-color: #274f86;
+    --secondary-color: #ffffff;
+    --text-dark: #252525;
     --background-light: #f4f4f9;
 }
 
@@ -71,10 +71,6 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
-/* nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-} */
-
 nav ul.open {
     display: block;
 }
@@ -82,9 +78,39 @@ nav ul.open {
 main {
     max-width: 800px;
     margin: 0 auto;
+}
+
+#temple-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--background-light);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.temple-card p {
+    margin: 0.25rem 0;
+    font-size: 0.8rem;
+}
+
+.temple-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 4px;
 }
 
 figure img {
