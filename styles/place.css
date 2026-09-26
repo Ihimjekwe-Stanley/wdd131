@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #5c5cdb;
+    --secondary-color: #ffffff;
+    --text-dark: #1d1c1c;
+    --bg-color: #f0f0f0;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+header,
+main,
+footer {
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+#header-title {
+    
+    font-size: 1.5rem;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+.weather-icon {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.data-row {
+    margin: 0 auto;
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    /* padding: 1rem; */
+}
+
+dt {
+    text-align: right;
+    font-weight: 700;
+}
+dd {
+    font-size: 1rem;
+    text-align: left;
+}
+
+dt, dd {
+    width: 50%;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .weather-icon {
+        display: none;
+    }
+
+    .sec2 h2::after {
+        content: " ⛅";
+    }
+
+    main {
+        position: relative;
+    }
+
+    .sec2 , .sec1 {
+        position: absolute;
+        background-color: rgba(236, 229, 229, 0.6);
+        padding: 1rem;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    .sec1 {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .sec2 {
+        bottom: 6rem;
+        right: 2rem;
+    }
+
+    h2 {
+        background-color: var(--primary-color);
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+
+    /* main {
+        max-width: 80vw;
+        height: auto;
+    } */
+}
