@@ -68,6 +68,28 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
+    {
+    templeName: "Guayaquil Ecuador",
+    location: "Guayaquil, Ecuador",
+    dedicated: "1999, August, 1",
+    area: 70884,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/058-Guayaquil-Ecuador-Temple.jpg"
+  },
+  {
+    templeName: "Bogotá Colombia",
+    location: "Bogotá, Colombia",
+    dedicated: "1999, April, 24",
+    area: 53500,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-7733-main.jpg"
+  },
+  {
+    templeName: "Recife Brazil",
+    location: "Recife, Brazil",
+    dedicated: "2000, December, 15",
+    area: 37200,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36778-main.jpg"
+  }
+
   // Add more temple objects here...
 ];
 
