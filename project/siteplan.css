@@ -1,0 +1,278 @@
+
+:root {
+    --dark-green: #1B5E20;
+    --light-green: #E8F5E9;
+    --cream: #FFF8E1;
+    --dark-gray: #263238;
+    --white: #ffffff;
+    --border: #B0BEC5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--dark-gray);
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--cream);
+    color: var(--dark-green);
+    border-radius: 50%;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab", Georgia, serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    color: var(--dark-green);
+    border-bottom: 3px solid var(--dark-green);
+    padding-bottom: 0.4rem;
+}
+
+h3 {
+    color: var(--dark-green);
+}
+
+.tagline {
+    margin: 0.2rem 0 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+section {
+    background-color: var(--white);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(38, 50, 56, 0.12);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.7rem;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.color-card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.color-card h3,
+.color-card p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.color-swatch {
+    height: 80px;
+}
+
+.dark-green {
+    background-color: var(--dark-green);
+}
+
+.light-green {
+    background-color: var(--light-green);
+}
+
+.cream {
+    background-color: var(--cream);
+}
+
+.dark-gray {
+    background-color: var(--dark-gray);
+}
+
+.type-example {
+    background-color: var(--light-green);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid var(--dark-green);
+}
+
+.font-heading-example {
+    font-family: "Roboto Slab", Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+.font-body-example {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.wireframe {
+    border: 3px solid var(--dark-gray);
+    background-color: var(--white);
+    padding: 1rem;
+    margin: 1rem auto 2rem;
+}
+
+.mobile-wireframe {
+    max-width: 360px;
+}
+
+.desktop-wireframe {
+    max-width: 900px;
+}
+
+.wf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.wf-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    min-height: 180px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--light-green);
+    border: 2px dashed var(--dark-green);
+    text-align: center;
+}
+
+.wf-hero button {
+    border: 0;
+    padding: 0.6rem 1rem;
+    background-color: var(--dark-green);
+    color: var(--white);
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.wf-section {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--cream);
+    border: 2px dashed var(--dark-green);
+    text-align: center;
+}
+
+.wf-card {
+    margin-top: 0.8rem;
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid var(--dark-gray);
+}
+
+.wf-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.wf-footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .color-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wf-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+}
