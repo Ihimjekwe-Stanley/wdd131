@@ -1,0 +1,165 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #264653;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+form > label,
+form > input,
+form > select,
+form > textarea {
+    display: block;
+    width: 100%;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+fieldset {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.7rem 0;
+    font-weight: normal;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating label {
+    margin: 0.5rem 0;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e3a5f;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1f776d;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #e9c46a;
+    outline-offset: 2px;
+}
+
+.confirmation {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.confirmation h2 {
+    color: #264653;
+}
+
+.confirmation a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: #2a9d8f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #264653;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        padding: 2rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    .rating {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rating label {
+        margin: 0;
+    }
+}
