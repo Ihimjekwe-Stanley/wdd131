@@ -1,4 +1,5 @@
 
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,6 +32,18 @@ form {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Required field indicator */
+.required {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+.required-note {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
 label,
 legend {
     font-weight: bold;
@@ -53,10 +66,19 @@ input[type="text"],
 input[type="date"],
 select,
 textarea {
+    width: 100%;
     padding: 0.75rem;
     border: 1px solid #777;
     border-radius: 4px;
     font: inherit;
+}
+
+/* Prevent form controls from becoming wider than the form */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    box-sizing: border-box;
 }
 
 fieldset {
@@ -136,6 +158,10 @@ textarea:focus {
     border-radius: 4px;
 }
 
+.confirmation a:hover {
+    background-color: #1f776d;
+}
+
 footer {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -163,3 +189,4 @@ footer {
         margin: 0;
     }
 }
+

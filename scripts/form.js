@@ -27,6 +27,7 @@ const products = [
     }
 ];
 
+// Populate the product select menu
 const productSelect = document.querySelector("#product");
 
 if (productSelect) {
@@ -40,6 +41,7 @@ if (productSelect) {
     });
 }
 
+// Count submitted reviews using localStorage
 const reviewCountElement = document.querySelector("#reviewCount");
 
 if (reviewCountElement) {
@@ -50,4 +52,11 @@ if (reviewCountElement) {
     localStorage.setItem("reviewCount", reviewCount);
 
     reviewCountElement.textContent = reviewCount;
+}
+
+// Display the page's last modified date
+const lastModifiedElement = document.querySelector("#lastModified");
+
+if (lastModifiedElement) {
+    lastModifiedElement.textContent = document.lastModified;
 }
