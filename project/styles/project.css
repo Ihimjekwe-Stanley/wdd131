@@ -1,0 +1,592 @@
+
+/* =========================
+   GENERAL STYLES
+========================= */
+
+@media (max-width: 10px) {
+    .hero img {
+        height: 10px;
+    }
+}
+
+:root {
+    --dark-green: #1B5E20;
+    --light-green: #E8F5E9;
+    --cream: #FFF8E1;
+    --dark-gray: #263238;
+    --white: #FFFFFF;
+    --border: #C8D6C9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--dark-gray);
+    background-color: var(--cream);
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab", serif;
+    color: var(--dark-green);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+a {
+    color: var(--dark-green);
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+
+/* =========================
+   HEADER AND NAVIGATION
+========================= */
+
+header {
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo {
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--white);
+    color: var(--dark-green);
+}
+
+.menu-button {
+    display: none;
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 4px;
+    padding: 0.35rem 0.6rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    padding: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+}
+
+.hero-content .eyebrow {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.button {
+    display: inline-block;
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #0D4012;
+    color: var(--white);
+}
+
+.secondary-button {
+    background-color: var(--white);
+    color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+}
+
+.secondary-button:hover {
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro,
+.feed-preview,
+.tips-preview,
+.call-to-action {
+    padding: 3rem 1.5rem;
+}
+
+.intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+
+/* =========================
+   FEED CARDS
+========================= */
+
+.feed-preview {
+    background-color: var(--light-green);
+}
+
+.feed-preview h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.feed-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.feed-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.25rem;
+}
+
+.card-content h3 {
+    margin-top: 0;
+}
+
+.card-content a {
+    font-weight: 700;
+}
+
+
+/* =========================
+   TIPS SECTION
+========================= */
+
+.tips-preview {
+    background-color: var(--cream);
+}
+
+.tips-preview > div {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.tips-preview li {
+    margin-bottom: 0.75rem;
+}
+
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.call-to-action {
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+}
+
+.call-to-action h2 {
+    color: var(--white);
+}
+
+.call-to-action p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   FEED PAGE
+========================= */
+
+.page-header {
+    padding: 3rem 1.5rem;
+    background-color: var(--light-green);
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-bottom: 0.75rem;
+}
+
+.page-header p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.filter-section {
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.filter-section label {
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+.filter-section select {
+    padding: 0.65rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.feed-list {
+    padding: 2rem 1.5rem 4rem;
+}
+
+.feed-list-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.feed-item {
+    background-color: var(--white);
+    border-left: 5px solid var(--dark-green);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+
+.feed-item h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.feed-item .stage {
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+
+/* =========================
+   TIPS PAGE
+========================= */
+
+.tips-content {
+    padding: 3rem 1.5rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.tip-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 7px;
+    border-top: 4px solid var(--dark-green);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+
+.tip-card h2 {
+    font-size: 1.4rem;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-section {
+    background-color: var(--light-green);
+    padding: 3rem 1.5rem;
+}
+
+.form-container {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.35rem;
+    font-weight: 700;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font: inherit;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.form-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--light-green);
+    border-left: 4px solid var(--dark-green);
+    font-weight: 700;
+}
+
+
+/* =========================
+   REFERENCES
+========================= */
+
+.references {
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.references li {
+    margin-bottom: 1rem;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 800px) {
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feed-list-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .header-content {
+        flex-wrap: wrap;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25rem;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .intro,
+    .feed-preview,
+    .tips-preview,
+    .call-to-action,
+    .tips-content,
+    .form-section {
+        padding: 2rem 1rem;
+    }
+
+    .form-container {
+        padding: 1.25rem;
+    }
+}

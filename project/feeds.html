@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Learn about common poultry feed types, recommended feeding stages, purposes, and ingredients for broilers, layers, and cockerels."
+    >
+
+    <meta name="author" content="Stanway Poultry Feed Guide">
+
+    <title>Feed Types | Stanway Poultry Feed Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <a class="logo" href="index.html">
+                Stanway Poultry Feed Guide
+            </a>
+
+            <button
+                id="menuButton"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="feeds.html" class="active">Feed Types</a>
+                <a href="tips.html">Feeding Tips</a>
+                <a href="references.html">References</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+            <h1>Poultry Feed Types</h1>
+
+            <p>
+                Understanding the right feed for each type and stage of poultry
+                production can help farmers support healthy birds and manage
+                feeding costs.
+            </p>
+        </section>
+
+
+        <section class="filter-section">
+
+            <h2>Find a Feed Type</h2>
+
+            <p>
+                Select a bird category below to see the recommended feed types.
+            </p>
+
+            <label for="feedFilter">Filter by bird type:</label>
+
+            <select id="feedFilter">
+                <option value="All">All Feed Types</option>
+                <option value="Broiler">Broiler</option>
+                <option value="Layer">Layer</option>
+                <option value="Cockerel">Cockerel</option>
+            </select>
+
+        </section>
+
+
+        <section class="feed-list">
+
+            <h2>Feed Guide</h2>
+
+            <div
+                id="feedContainer"
+                class="feed-list-grid"
+            >
+                <!-- Feed cards are created by JavaScript. -->
+            </div>
+
+        </section>
+
+
+        <section class="tips-preview">
+
+            <div>
+
+                <h2>How to Choose the Right Feed</h2>
+
+                <p>
+                    Poultry feed should match the age, purpose, and production
+                    stage of the birds. Young birds generally require feed that
+                    supports development, while mature birds have different
+                    nutritional needs.
+                </p>
+
+                <p>
+                    Farmers should also consider feed quality, ingredient
+                    availability, storage conditions, bird health, and the cost
+                    of feeding when choosing a feed program.
+                </p>
+
+                <a class="button" href="tips.html">
+                    See Feeding Tips
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="call-to-action">
+
+            <h2>Want to Improve Your Feeding Practice?</h2>
+
+            <p>
+                Learn practical ways to manage feed, provide water, monitor
+                birds, and reduce unnecessary feed waste.
+            </p>
+
+            <a class="button secondary-button" href="tips.html">
+                View Feeding Tips
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentYear"> 2026 </span>
+            Stanway Poultry Feed Guide
+        </p>
+
+        <p>
+            Created for WDD131 Web Development
+        </p>
+
+        <p>
+            <a href="references.html">References</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

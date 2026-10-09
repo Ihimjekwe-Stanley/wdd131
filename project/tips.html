@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Practical poultry feeding tips covering feed management, clean water, storage, bird monitoring, feed waste, and feeding practices."
+    >
+
+    <meta name="author" content="Stanway Poultry Feed Guide">
+
+    <title>Feeding Tips | Stanway Poultry Feed Guide</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <a class="logo" href="index.html">
+                Stanway Poultry Feed Guide
+            </a>
+
+            <button
+                id="menuButton"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="feeds.html">Feed Types</a>
+                <a href="tips.html" class="active">Feeding Tips</a>
+                <a href="references.html">References</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="page-header">
+
+            <h1>Practical Poultry Feeding Tips</h1>
+
+            <p>
+                Good feeding is more than simply giving birds feed. Proper
+                management can help reduce waste, support healthy birds, and
+                improve farm performance.
+            </p>
+
+        </section>
+
+
+        <section class="tips-content">
+
+            <div class="tips-grid">
+
+                <article class="tip-card">
+                    <h2>1. Use the Right Feed</h2>
+
+                    <p>
+                        Choose feed according to the bird's age, type, and
+                        production stage. Broilers, layers, and cockerels have
+                        different nutritional needs.
+                    </p>
+                </article>
+
+
+                <article class="tip-card">
+                    <h2>2. Provide Clean Water</h2>
+
+                    <p>
+                        Birds should have access to clean drinking water.
+                        Check drinkers regularly and keep them clean to reduce
+                        contamination.
+                    </p>
+                </article>
+
+
+                <article class="tip-card">
+                    <h2>3. Store Feed Properly</h2>
+
+                    <p>
+                        Store feed in a cool, dry, and clean location. Protect
+                        bags from moisture, pests, and direct contact with the
+                        floor.
+                    </p>
+                </article>
+
+
+                <article class="tip-card">
+                    <h2>4. Reduce Feed Waste</h2>
+
+                    <p>
+                        Avoid filling feeders excessively. Monitor spilled
+                        feed and adjust feeder height and quantity when
+                        necessary.
+                    </p>
+                </article>
+
+
+                <article class="tip-card">
+                    <h2>5. Monitor Bird Growth</h2>
+
+                    <p>
+                        Regularly observe bird weight, activity, appetite, and
+                        general condition. Changes can help farmers identify
+                        feeding or management problems early.
+                    </p>
+                </article>
+
+
+                <article class="tip-card">
+                    <h2>6. Make Changes Gradually</h2>
+
+                    <p>
+                        When changing feed, avoid sudden changes where possible.
+                        Gradual changes can make it easier for birds to adjust
+                        to a new feeding program.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="tips-content">
+
+            <h2>Managing Feed Costs</h2>
+
+            <p>
+                Feed is one of the major expenses in poultry production.
+                Farmers can improve cost management by reducing unnecessary
+                waste, comparing ingredient prices, buying quality ingredients,
+                and keeping accurate records.
+            </p>
+
+            <p>
+                The cheapest ingredient is not always the best choice. A good
+                feeding program should consider nutritional value, ingredient
+                quality, bird performance, and the overall cost of producing
+                healthy birds.
+            </p>
+
+            <p>
+                Keeping simple records of feed purchased, feed consumed, bird
+                numbers, growth, and production can help a farmer identify
+                changes in performance and make better decisions.
+            </p>
+
+        </section>
+
+
+        <section class="form-section">
+
+            <div class="form-container">
+
+                <h2>Ask a Feeding Question</h2>
+
+                <p>
+                    Have a question about poultry feeding? Complete the form
+                    below to record your question.
+                </p>
+
+                <form id="feedForm">
+
+                    <label for="farmerName">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="farmerName"
+                        name="farmerName"
+                        autocomplete="name"
+                        required
+                    >
+
+
+                    <label for="birdType">
+                        Bird Type
+                    </label>
+
+                    <select
+                        id="birdType"
+                        name="birdType"
+                        required
+                    >
+                        <option value="">Select a bird type</option>
+                        <option value="Broiler">Broiler</option>
+                        <option value="Layer">Layer</option>
+                        <option value="Cockerel">Cockerel</option>
+                    </select>
+
+
+                    <label for="question">
+                        Your Feeding Question
+                    </label>
+
+                    <textarea
+                        id="question"
+                        name="question"
+                        placeholder="Write your poultry feeding question here..."
+                        required
+                    ></textarea>
+
+
+                    <button class="button" type="submit">
+                        Submit Question
+                    </button>
+
+                    <div
+                        id="formMessage"
+                        class="form-message"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <section class="call-to-action">
+
+            <h2>Learn More About Poultry Feed</h2>
+
+            <p>
+                Visit the feed guide to learn about different feed types,
+                feeding stages, purposes, and common ingredients.
+            </p>
+
+            <a class="button secondary-button" href="feeds.html">
+                Explore Feed Types
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentYear"> 2026 </span>
+            Stanway Poultry Feed Guide
+        </p>
+
+        <p>
+            Created for WDD131 Web Development
+        </p>
+
+        <p>
+            <a href="references.html">References</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
